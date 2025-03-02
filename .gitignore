@@ -1,0 +1,38 @@
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Database & Logs
+*.sqlite3
+*.log
+*.db
+postgres_data/
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Expo & React Native
+.expo/
+.expo-shared/
+android/
+ios/
+*.apk
+*.keystore
+
+# Environment Variables
+.venv/
+.env
+.env.local
+.env.production
+.env.development
