@@ -7,4 +7,5 @@ Setup:
 - python -m venv .venv (to create a virtual env)
 - source .venv/bin/activate (activate the virtual env)
 - pip install -r requirements.txt (installs dependencies)
+- run postgres in docker
 - uvicorn main:app --reload
