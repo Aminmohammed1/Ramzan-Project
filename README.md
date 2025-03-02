@@ -5,6 +5,6 @@ Setup:
 - git clone repo
 - cd ./Ramzan-Project
 - python -m venv .venv (to create a virtual env)
-- source venv/bin/activate (activate the virtual env)
+- source .venv/bin/activate (activate the virtual env)
 - pip install -r requirements.txt (installs dependencies)
 - uvicorn main:app --reload
