@@ -36,3 +36,4 @@ ios/
 .env.local
 .env.production
 .env.development
+.time/
