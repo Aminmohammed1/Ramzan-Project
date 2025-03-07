@@ -5,12 +5,13 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 from config.settings import DATABASE_URL
+import models
 app = FastAPI()
 
 engine = create_async_engine(DATABASE_URL, echo=True)
 SessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 Base = declarative_base()
-
+# models.Base.metadata.create_all(bind=engine)
 @app.on_event("startup")
 async def startup_event():
     await init_db()
