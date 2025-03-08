@@ -10,3 +10,4 @@ class Mosque(Base):
     location = Column(Geometry("POINT"), nullable=False)
     address = Column(String)
     prayer_timings = relationship("PrayerTiming", back_populates="mosque", cascade="all, delete-orphan")
+    added_by = Column(Integer, nullable=False)

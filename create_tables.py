@@ -1,6 +1,9 @@
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
-from models.user import Base
+from models.mosque import Mosque
+from models.prayer_timing import PrayerTiming
+from models.user import User
+from db.init_db import Base
 
 DATABASE_URL = "postgresql+asyncpg://admin:secret@localhost/mosque_db"
 

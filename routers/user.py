@@ -4,7 +4,6 @@ from sqlalchemy.sql import text
 from database import get_db
 from models.user import User
 from pydantic import BaseModel
-import json
 router = APIRouter()
 
 class req(BaseModel):

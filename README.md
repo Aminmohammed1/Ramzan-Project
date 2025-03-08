@@ -9,3 +9,7 @@ Setup:
 - pip install -r requirements.txt (installs dependencies)
 - run postgres in docker
 - uvicorn main:app --reload
+
+open pgadmin at http://localhost:5050
+click new server -> name - anyName -> connections -> host name: db
+                                                  -> password: secret
